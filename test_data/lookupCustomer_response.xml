@@ -1,0 +1,12 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:lookupCustomerResponse xmlns:ns3="http://www.fusesource.com/demo/customer" xmlns:ns2="http://demo.fusesource.com/wsdl/CustomerService/">
+            <ret>
+                <ns3:firstName>Ade</ns3:firstName>
+                <ns3:lastName>Trenaman</ns3:lastName>
+                <ns3:phoneNumber>+353-1-01234567</ns3:phoneNumber>
+                <ns3:id>2</ns3:id>
+            </ret>
+        </ns2:lookupCustomerResponse>
+    </soap:Body>
+</soap:Envelope>

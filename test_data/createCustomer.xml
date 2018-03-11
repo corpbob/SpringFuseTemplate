@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://demo.fusesource.com/wsdl/CustomerService/" xmlns:cus1="http://www.fusesource.com/demo/customer">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cus:createCustomer>
+         <customer>
+            <cus1:firstName>?</cus1:firstName>
+            <cus1:lastName>?</cus1:lastName>
+            <cus1:phoneNumber>?</cus1:phoneNumber>
+            <cus1:id>?</cus1:id>
+         </customer>
+      </cus:createCustomer>
+   </soapenv:Body>
+</soapenv:Envelope>

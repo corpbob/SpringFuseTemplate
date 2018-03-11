@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://demo.fusesource.com/wsdl/CustomerService/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cus:deleteCustomer>
+         <id>?</id>
+      </cus:deleteCustomer>
+   </soapenv:Body>
+</soapenv:Envelope>

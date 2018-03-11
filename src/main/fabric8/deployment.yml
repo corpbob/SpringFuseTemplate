@@ -1,0 +1,23 @@
+spec:
+  template:
+    spec:
+      containers:
+        - 
+          resources:
+            requests:
+              cpu: "0.2"
+#              memory: 256Mi
+            limits:
+              cpu: "1.0"
+#              memory: 256Mi
+          env:
+          - name: SPRING_APPLICATION_JSON
+            value: '{"server":{"tomcat":{"max-threads":1}}}'
+          - name: DB_HOST
+            value: 35.173.46.55
+          - name: DB_PORT
+            value: 32186
+          - name: DB_USER
+            value: system
+          - name: DB_PASSWORD
+            value: oracle
