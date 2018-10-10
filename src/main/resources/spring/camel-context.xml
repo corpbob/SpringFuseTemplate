@@ -37,7 +37,7 @@
             <from id="_from1" uri="cxf:bean:customer-ws"/>
             <choice id="choice1">
                 <when id="_when1">
-                    <simple>${in.header.operationName} == 'updateCustomer' </simple>              
+                    <simple>${in.header.operationName} == 'updateCustomer' </simple>
                     <to id="_to1" uri="updateCustomer"/>
                 </when>
                 <when id="_when2">
@@ -62,7 +62,7 @@
             </choice>
         </route>
     </camelContext>
-    <bean class="com.fusesource.customerwscamelcxfpojo.PrintService" id="printService"/>
+    <!--  bean class="com.fusesource.customerwscamelcxfpojo.PrintService" id="printService"/-->
     <bean
         class="com.fusesource.customerwscamelcxfpojo.UpdateCustomerProcessor" id="updateCustomer">
         <property name="ds" ref="myDS"/>
@@ -70,7 +70,7 @@
     <bean
         class="com.fusesource.customerwscamelcxfpojo.GetCustomerStatusProcessor" id="getCustomerStatus"/>
     <bean
-        class="com.fusesource.customerwscamelcxfpojo.LookupCustomerProcessor3" id="lookupCustomer">
+        class="com.fusesource.customerwscamelcxfpojo.LookupCustomerProcessor" id="lookupCustomer">
         <property name="ds" ref="myDS"/>
     </bean>
     <bean
