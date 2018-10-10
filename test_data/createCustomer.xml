@@ -3,10 +3,10 @@
    <soapenv:Body>
       <cus:createCustomer>
          <customer>
-            <cus1:firstName>?</cus1:firstName>
-            <cus1:lastName>?</cus1:lastName>
-            <cus1:phoneNumber>?</cus1:phoneNumber>
-            <cus1:id>?</cus1:id>
+            <cus1:firstName>Winnie</cus1:firstName>
+            <cus1:lastName>Pooh</cus1:lastName>
+            <cus1:phoneNumber>12345</cus1:phoneNumber>
+            <cus1:id>0</cus1:id>
          </customer>
       </cus:createCustomer>
    </soapenv:Body>

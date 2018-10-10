@@ -4,7 +4,7 @@ begin
 select customer_seq.nextval into :new.id
 from dual;
 end;
-
+/
 insert into customer (firstname, lastname,phoneno, isdeleted) values ('Mickey', 'Mouse', '123456', 0);
 insert into customer (firstname, lastname,phoneno, isdeleted) values ('Donald', 'Duck', '123451', 0);
 
