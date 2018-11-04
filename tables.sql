@@ -14,3 +14,7 @@ end;
 insert into customer (firstname, lastname,phoneno, isdeleted) values ('Mickey', 'Mouse', '123456', 0);
 insert into customer (firstname, lastname,phoneno, isdeleted) values ('Donald', 'Duck', '123451', 0);
 
+create table orders(id number(38) not null,item varchar2(10), amount number,description varchar2(30), processed number);
+
+insert into orders (id, item, amount, description, processed) values (2, 'Camel', 4, 'Camel Book', 1);
+
