@@ -14,7 +14,7 @@
  * permissions and limitations under the License.
  *
  */
-package com.kbz.fuse;
+package com.example.fuse;
 
 import org.springframework.stereotype.Component;
 
