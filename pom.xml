@@ -95,6 +95,12 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.30</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
+    <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-jdbc</artifactId>
+        <version>8.5.15</version>
+    </dependency>
   </dependencies>
   <build>
     <defaultGoal>spring-boot:run</defaultGoal>
