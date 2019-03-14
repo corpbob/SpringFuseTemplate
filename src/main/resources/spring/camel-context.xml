@@ -90,8 +90,8 @@
     </bean>
     <bean
         class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="myDS">
-        <property name="driverClassName" value="oracle.jdbc.pool.OracleDataSource"/>
-        <property name="url" value="jdbc:oracle:thin:@${DB_HOST}:${DB_PORT}:xe"/>
+        <property name="driverClassName" value="${DB_DRIVER}"/>
+        <property name="url" value="${DB_URL}"/>
         <property name="username" value="${DB_USER}"/>
         <property name="password" value="${DB_PASSWORD}"/>
     </bean>
