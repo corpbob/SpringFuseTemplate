@@ -101,5 +101,7 @@
         <property name="url" value="${DB_URL}"/>
         <property name="username" value="${DB_USER}"/>
         <property name="password" value="${DB_PASSWORD}"/>
+        <property name="initialSize" value="100"/>
+        <property name="testWhileIdle" value="true"/>
     </bean>
 </beans>
