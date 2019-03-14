@@ -88,8 +88,15 @@
     <bean class="org.apache.camel.component.sql.SqlComponent" id="sql">
         <property name="dataSource" ref="myDS"/>
     </bean>
-    <bean
+    <!--bean
         class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="myDS">
+        <property name="driverClassName" value="${DB_DRIVER}"/>
+        <property name="url" value="${DB_URL}"/>
+        <property name="username" value="${DB_USER}"/>
+        <property name="password" value="${DB_PASSWORD}"/>
+    </bean-->
+    <bean>
+      class="org.apache.tomcat.jdbc.pool.DataSource" id="myDS">
         <property name="driverClassName" value="${DB_DRIVER}"/>
         <property name="url" value="${DB_URL}"/>
         <property name="username" value="${DB_USER}"/>
