@@ -95,7 +95,7 @@
         <property name="username" value="${DB_USER}"/>
         <property name="password" value="${DB_PASSWORD}"/>
     </bean-->
-    <bean>
+    <bean
       class="org.apache.tomcat.jdbc.pool.DataSource" id="myDS">
         <property name="driverClassName" value="${DB_DRIVER}"/>
         <property name="url" value="${DB_URL}"/>
